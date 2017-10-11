@@ -1,0 +1,1 @@
+container based on php:5-fpm alpine with grep package which is needed for Symfony framework
