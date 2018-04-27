@@ -17,7 +17,7 @@ ADD speedtest /usr/local/bin/
 
 RUN mkdir -p /usr/lib/check_mk_agent/local/600
 ADD check_speedtest-cli.sh /var/lib/check_mk_agent/local/300
-RUN chmod +x /var/lib/check_mk_agent/check_speedtest-cli.sh && \
+RUN chmod +x /var/lib/check_mk_agent/local/300/check_speedtest-cli.sh && \
     chmod +x /usr/local/bin/speedtest
 
 EXPOSE 6556
