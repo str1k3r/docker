@@ -15,7 +15,8 @@ ADD check_mk /etc/xinetd.d/
 ADD mrpe.cfg /etc/check_mk/
 ADD speedtest /usr/local/bin/
 
-ADD check_speedtest-cli.sh /var/lib/check_mk_agent/
+RUN mkdir -p /usr/lib/check_mk_agent/local/600
+ADD check_speedtest-cli.sh /var/lib/check_mk_agent/local/300
 RUN chmod +x /var/lib/check_mk_agent/check_speedtest-cli.sh && \
     chmod +x /usr/local/bin/speedtest
 
